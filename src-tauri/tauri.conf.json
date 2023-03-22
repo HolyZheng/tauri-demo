@@ -11,7 +11,22 @@
     "version": "0.0.0"
   },
   "tauri": {
-    
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    },
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "dialog": {
+        "all": true,
+        "open": true,
+        "save": true
+      }
+    },
     "bundle": {
       "active": true,
       "icon": [
@@ -21,7 +36,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "163163",
+      "identifier": "mailmail",
       "targets": "all"
     },
     "security": {
